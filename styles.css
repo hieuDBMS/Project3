@@ -1,0 +1,61 @@
+.btn{
+    background-color: red;
+    color: white;
+    padding: 0.625rem 2rem;
+    border-radius: 0.625rem;
+    border: none;
+    outline: none;
+    transition: opacity 0.2 ease-in-out;
+}
+
+.btn:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.button .btn{
+    transform: scale(1.5);
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+.model{
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    max-width: 600px;
+
+    opacity: 0;
+    z-index: -1;
+
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+
+}
+
+.model p{
+    font-size: 0.9rem;
+    line-height: 1.8rem ;
+    margin-bottom: 1.5rem;
+}
+.model h1{
+    margin-bottom: 1rem;
+}
+.model.model-open{
+    opacity: 1;
+    z-index: 99;
+}
